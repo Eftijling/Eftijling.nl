@@ -406,9 +406,9 @@ section{
     background-color: #A6192E;
 }
 
-#titlerule{
+#titlerule svg{
     height: 30px;
-    width: fit-content;
+    width: 400px;
     padding-left: 100%;
     transform: translateX(-50%);
 }
@@ -423,7 +423,7 @@ section{
     text-align: left;
     margin-left: 50%;
     transform: translateX(-50%);
-    min-width: 71%;
+    min-width: 72%;
     max-width: 1800px;
 }
 
@@ -435,14 +435,25 @@ section{
 }
 
 @media only screen and (max-width: 768px){
+    #welkom article h1{
+        font-size: 60%;
+    }
+    #titlerule svg{
+        width: 60%;
+    }
     #introductie p{
         text-align: center;
         left: 50%;
         font-size: 30px;
         transform: translateX(-50%);
+        width: 100%;
     }
     #heraut{
         margin-left: 10px;
+    }
+    #heraut svg{
+        width: 30px;
+        transform: translateY(-10px);
     }
 }
 /* ============================================== */
