@@ -110,7 +110,7 @@ header{
 
 #navbar {
     background-color: #A6192E;
-    width: 100%;
+    width: 100vw;
     left: 0px;
     position: absolute;
     height: 50px;
