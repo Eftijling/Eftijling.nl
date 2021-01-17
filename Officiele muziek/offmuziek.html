@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Officiële muziek</title>
+    <meta name="viewport" content="width=device-width, intitialscale=1.0">
+    <link rel="stylesheet" href="offmuziek.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <script src="offmuziek.js"></script>
+    <script src="https://app.awesome-table.com/AwesomeTableInclude.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <svg id="menu" onclick="openmenu()" width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" >
+                <g transform="matrix(1,0,0,1,12,12)">
+                    <path d="M-9,-5L9,-5" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:2px;"/>
+                    <path d="M-9,0L9,0" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:2px;"/>
+                    <path d="M-9,5L9,5" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:2px;"/>
+                </g>
+            </svg>
+            <a href="#">Over Mij</a>
+            <div class="dropdown" id="currentpage">
+                <button class="dropbtn" onclick="window.location.href='#'">Muzieklijsten</button>
+                <div class="dropdown-content">
+                    <a href="offmuziek.html">Officiële Muziek</a>
+                </div>
+            </div>
+            <a href="../index.html">Home</a>
+        </div>
+
+        <div class="mobilenav" id="mobilnav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Muzieklijsten</a></li>
+                <li><a class="m_current" href="offmuziek.html" id="m_subnav">Officiële Muziek</a></li>
+                <li><a href="#">Over Mij</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <div id="table">
+            <div onload="domtable()" id="innertable" data-type="AwesomeTableView" data-hide-filters="false" data-filters="" data-viewID="-M8y99p7ClFXlAMTESr_"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="miniplayer" id="miniplayer">
+            <div id="placeholder"></div>
+            <div id="player"></div>
+            <div class="controlls">
+             <div id="playpause">   
+              <img id="pause"src="https://lh3.google.com/u/1/d/1NoBw1UyiiKxmJ6H7GNiJ-DdVUz43aJtB=w3840-h2052-iv1" alt="pause" onclick="pause()" height="100" width="100"> 
+              <img id="play"src="https://lh3.google.com/u/1/d/1S4QmmcrPy2GVrR777tK5-PZnglXLZqNX=w3840-h2052-iv1" alt="pause" onclick="play()" height="100" width="100">
+             </div>
+             <div>
+                <div id="bar" onclick="progressbar()">
+               <div id="progress"></div>
+            </div>    
+             </div>
+            </div>
+            </div>
+            </div>
+            
+    </footer>
+</body>
+</html>
