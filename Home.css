@@ -409,7 +409,7 @@ section{
 #titlerule{
     height: 30px;
     width: 400px;
-    padding-left: 100%;
+    margin-left: 50%;
     transform: translateX(-50%);
 }
 
@@ -436,24 +436,29 @@ section{
 
 @media only screen and (max-width: 768px){
     #welkom article h1{
-        font-size: 60%;
+        font-size: 370%;
     }
     #titlerule{
         width: 60%;
     }
+    #introductie {
+        transform: translate(-50%,-50px);
+    }
     #introductie p{
         text-align: center;
         left: 50%;
-        font-size: 30px;
-        transform: translateX(-50%);
+        font-size: 32px;
+        transform: translate(-50%,-20px);
         width: 100%;
     }
     #heraut{
-        margin-left: 10px;
+        display: block;
     }
     #heraut svg{
+        margin-left: 50%;
+        transform: translate(-50%,-7px);
         width: 30px;
-        transform: translateY(-10px);
+        background-color: white;
     }
 }
 /* ============================================== */
