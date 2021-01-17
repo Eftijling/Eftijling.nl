@@ -420,10 +420,11 @@ section{
 #introductie {
     font-size: 40px;
     height: 75px;
-    width: 87%;
     text-align: left;
     margin-left: 50%;
     transform: translateX(-50%);
+    min-width: 71%;
+    max-width: 1800px;
 }
 
 #introductie p{
@@ -437,6 +438,7 @@ section{
     #introductie p{
         text-align: center;
         left: 50%;
+        font-size: 30px;
         transform: translateX(-50%);
     }
     #heraut{
