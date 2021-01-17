@@ -38,6 +38,6 @@ function projectinfo(){
 }
 
 function exitinfo(){
-    ocument.getElementById('projectinfo').style.display = "none";
+    document.getElementById('projectinfo').style.display = "none";
 }
 
