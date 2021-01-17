@@ -422,7 +422,7 @@ section{
     height: 75px;
     width: 87%;
     text-align: left;
-    left: 50%;
+    margin-left: 50%;
     transform: translateX(-50%);
 }
 
