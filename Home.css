@@ -345,7 +345,9 @@ section{
     transform: translateX(-50%);
     color: white;
 }
-
+.fancyborder{
+    z-index: 10;
+}
 #topleft{
     left: 10px;
     top: 10px;
@@ -496,6 +498,17 @@ section{
     position: relative;
 }
 
+#projectbox h3{
+    display: none;
+    text-align: center;
+    width: 90%;
+    margin-left: 50%;
+    margin-top: 65px;
+    transform: translate(-50%,-50%);
+}
+
+
+
 #projects{
     height: 80%;
     top: 40px;
@@ -517,6 +530,71 @@ section{
     color: #A6192E;
     font-weight: bold;
     margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 768px){
+    #projects{
+        display: none;
+    }
+    #projecten{
+        bottom: 70px;
+        height: 150px;
+    }
+    #projectbox{
+        height: 130px;
+    }
+    #projectbox h2 {
+        display: none;
+    }
+    #projectbox h3{
+        display: block;
+    }
+}
+@media only screen and (max-width: 364.5px){
+    @media only screen and (max-height: 840px){
+        #projecten{
+            bottom: -25px;
+        }
+    }
+    @media only screen and (max-height: 739px){
+        #projecten{
+            display: none;
+        }
+    }
+    @media only screen and (max-height: 639px){
+        #introductie p{
+            font-size: 27px;
+        }
+    }   
+}
+@media only screen and (max-width: 455.5px)and (min-width:365px){
+    @media only screen and (max-height: 787px){
+        #projecten{
+            bottom: -25px;
+        }
+    }
+    @media only screen and (max-height: 687px){
+        #projecten{
+            display: none;
+        }
+    }
+}
+
+#projectinfo{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    display: none;
+}
+
+#projectinfo h2{
+    position: relative;
+    top: calc(100% - 100px);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
 }
 /* ============================================== */
 

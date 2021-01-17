@@ -32,4 +32,12 @@ function openmenu(){
     }      
 }
 
+function projectinfo(){
+    document.getElementById('projectinfo').style.display = "block";
+
+}
+
+function exitinfo(){
+    ocument.getElementById('projectinfo').style.display = "none";
+}
 

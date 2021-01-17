@@ -80,31 +80,31 @@
                 </div>
             </section>
             <section id="welkom">
-                <svg id="topleft" width="30px" height="30px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5;">
+                <svg id="topleft" class="fancyborder" width="30px" height="30px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5;">
                     <g transform="matrix(1,0,0,1,-0.5,-0.5)">
                         <path d="M0.5,19.5L13.5,19.5L13.5,6.5L6.5,6.5L6.5,13.5L19.5,13.5L19.5,3.5" style="fill:none;stroke:rgb(166,25,46);stroke-width:2px;"/>
                     </g>
                 </svg>
-                <div id="topl"></div>
+                <div id="topl" class="fancyborder"></div>
                 </svg>
-                <svg id="topright" width="30px" height="30px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5;">
+                <svg id="topright" class="fancyborder" width="30px" height="30px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5;">
                     <g transform="matrix(-1,0,0,1,20.5,-0.5)">
                         <path d="M0.5,19.5L13.5,19.5L13.5,6.5L6.5,6.5L6.5,13.5L19.5,13.5L19.5,3.5" style="fill:none;stroke:rgb(166,25,46);stroke-width:2px;"/>
                     </g>
                 </svg>
-                <div id="leftl"></div>
-                <svg id="bottomright" width="30px" height="30px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5;">
+                <div id="leftl" class="fancyborder"></div>
+                <svg id="bottomright" class="fancyborder" width="30px" height="30px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5;">
                     <g transform="matrix(-1,0,-0,-1,20.5,20.5)">
                         <path d="M0.5,19.5L13.5,19.5L13.5,6.5L6.5,6.5L6.5,13.5L19.5,13.5L19.5,3.5" style="fill:none;stroke:rgb(166,25,46);stroke-width:2px;"/>
                     </g>
                 </svg>
-                <div id="bottoml"></div>
-                <svg id="bottomleft" width="30px" height="30px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5;">
+                <div id="bottoml" class="fancyborder"></div>
+                <svg id="bottomleft" class="fancyborder" width="30px" height="30px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5;">
                     <g transform="matrix(1,0,-0,-1,-0.5,20.5)">
                         <path d="M0.5,19.5L13.5,19.5L13.5,6.5L6.5,6.5L6.5,13.5L19.5,13.5L19.5,3.5" style="fill:none;stroke:rgb(166,25,46);stroke-width:2px;"/>
                     </g>
                 </svg>
-                <div id="rightl"></div>
+                <div id="rightl" class="fancyborder"></div>
                 <article>
                     <h1>Welkom</h1>
                     <svg id="titlerule" width="400px" height="30px" viewBox="0 0 300 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -125,7 +125,8 @@
                     </div>
                     <div id="projecten">
                     <div id="projectbox">
-                        <h2>Deze website is nog volop in de maak, hier is wat u kunt verwachten:</h1>
+                        <h2>Deze website is nog volop in de maak, hier is wat u kunt verwachten:</h2>
+                        <h3 onclick="projectinfo()">Deze website is nog in de maak, tap hier voor meer info</h3>
                     <div id="projects">
                         <div id="pdatabases" class="projects">
                             <h2>Databases</h2>
@@ -137,6 +138,9 @@
                         </div>
                     </div>
                     </div>
+                    </div>
+                    <div id="projectinfo">
+                        <h2 onclick="exitinfo()">terug</h2>
                     </div>
                 </article>
             </section>
