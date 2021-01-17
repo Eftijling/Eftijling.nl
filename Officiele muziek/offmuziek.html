@@ -20,18 +20,18 @@
                 </g>
             </svg>
             <a href="#">Over Mij</a>
-            <div class="dropdown">
+            <div class="dropdown" id="currentpage">
                 <button class="dropbtn" onclick="window.location.href='#'">Muzieklijsten</button>
                 <div class="dropdown-content">
                     <a href="offmuziek.html">Officiële Muziek</a>
                 </div>
             </div>
-            <a href="../Home/Home.html">Home</a>
+            <a href="../index.html">Home</a>
         </div>
 
         <div class="mobilenav" id="mobilnav">
             <ul>
-                <li><a href="../Home/Home.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Muzieklijsten</a></li>
                 <li><a class="m_current" href="offmuziek.html" id="m_subnav">Officiële Muziek</a></li>
                 <li><a href="#">Over Mij</a></li>
@@ -46,6 +46,7 @@
     </main>
     <footer>
         <div class="miniplayer" id="miniplayer">
+            <div id="placeholder"></div>
             <div id="player"></div>
             <div class="controlls">
              <div id="playpause">   

@@ -52,18 +52,16 @@ window.addEventListener("message", function(vidid){
         if (vidid.origin === 'https://view-awesome-table.com'){
             var nplay = String(vidid.data).includes("play");
             var ncue = String(vidid.data).includes("cue");
-            console.log(nplay);
             if (nplay == true){
+                document.getElementById("placeholder").style.display = "none";
                 var ytid = String(vidid.data).replace("play-","");
-                console.log(ytid)
                 player.loadVideoById({'videoId': ytid,'startSeconds': 0});
+                progressbar();
             }
             if (ncue == true){
                 var ytid = String(vidid.data).replace("cue-","");
-                console.log(ytid)
                 player.cueVideoById({'videoId': ytid,'startSeconds': 0});
             }
-            
         }
     }
 });

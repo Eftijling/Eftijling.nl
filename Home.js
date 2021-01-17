@@ -34,10 +34,12 @@ function openmenu(){
 
 function projectinfo(){
     document.getElementById('projectinfo').style.display = "block";
+    document.getElementById('projecten').style.display = "none";
 
 }
 
 function exitinfo(){
     document.getElementById('projectinfo').style.display = "none";
+    document.getElementById('projecten').style.display = "block";
 }
 
