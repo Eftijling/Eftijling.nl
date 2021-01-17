@@ -316,9 +316,8 @@ section{
 
 #welkom{
     top: 50px;
-    height: 100vh;
-    /*height: calc(100vh - 50px)!important;*/
-    margin-bottom: 50px;
+    height: calc(100vh - 50px)!important;
+
 }
 
 #welkom article{
