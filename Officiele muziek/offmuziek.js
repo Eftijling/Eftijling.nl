@@ -130,10 +130,10 @@ function onPlayerStateChange() {
         document.getElementById('player').style.cssText = 'pointer-events: all;'
         if (pstate == 0){
             var nextvid = cuedids[0]
+            var title = cuetitle[0]
             cuedids.shift();
             cuetitle.shift();
-            player.loadVideoById({'videoId': nextvid,'startSeconds': 0});
-            var title = cuetitle[0];
+            player.loadVideoById({'videoId': nextvid,'startSeconds': 0});   
             document.getElementById('currentvideo').innerHTML = title;
             updatequeue();
             progressbar();
