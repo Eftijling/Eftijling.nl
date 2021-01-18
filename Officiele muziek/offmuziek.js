@@ -3,6 +3,7 @@ var player;
 var ytid;
 var playerready = 0;
 var tag = document.createElement('script');
+const cuedids = [];
 
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -60,7 +61,7 @@ window.addEventListener("message", function(vidid){
             }
             if (ncue == true){
                 var ytid = String(vidid.data).replace("cue-","");
-                player.cueVideoById({'videoId': ytid,'startSeconds': 0});
+                cuedids.push(ytid);
             }
         }
     }
@@ -106,5 +107,12 @@ if (pstate !== 1){
     document.getElementById('play').style.cssText = 'display:block;'
     document.getElementById('pause').style.cssText = 'display:none;'
     document.getElementById('player').style.cssText = 'pointer-events: all;'
+    if (pstate == 0){
+        var nextvid = cuedids[0]
+        cuedids.shift();
+        player.loadVideoById({'videoId': nextvid,'startSeconds': 0});
+        progressbar();
+
+    }
  }
 }

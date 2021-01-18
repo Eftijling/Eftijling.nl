@@ -6,6 +6,14 @@
     
 }
 
+#logo{
+    height: 100px;
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%,-20px);
+    position: fixed;
+}
+
 header{
     position: fixed;
     top: 0;
