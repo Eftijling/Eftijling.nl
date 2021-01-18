@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    width: 100vw;
+    height: 100vh; 
+}
+header{
+    width: 100vw;
+    height: 50px;
+}
+
+#logo{
+    height: 100px;
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%,-20px);
+    position: fixed;
+}
+
+/*======================================================/*
+
+
+
+
+
+/* NAVIGATIE*/
+#navbar {
+    background-color: #A6192E;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    height: 50px;
+}
+
+
+.navbar a {
+    float: right;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-decoration: none;
+    position: relative; 
+    padding-top: 15px;
+
+
+}
+
+#currentpage {
+    border-bottom-color: white;
+    border-bottom: 8px;
+    border-bottom-style: solid;
+    padding-bottom: 4px;
+}
+
+.dropdown {
+    float: right;
+}
+
+.dropbtn {
+    font-size: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+    position: relative; 
+    height: 42px;
+    
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    opacity: 70%;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    top: 10px;
+}
+  
+.dropbtn:hover ~ .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    text-align: center;
+    color: white;
+    display:  none;
+    position: fixed;
+    height: 40px;
+    background-color: #A6192E;
+    min-width: 160px;
+    box-shadow: 0px 18px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content div:hover{
+    display: block;
+}
+
+#naam {
+    left: 8px;
+    color: white;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0px;
+    top: 15px;
+    width: 120px;
+}
+
+#menu {
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+    content:url("menu.svg");
+    z-index: 3;
+    fill: red;
+    display: none;
+
+}
+
+.showmenu1 {
+	animation: showmenu1 0.6s ease-in both;
+}
+
+@keyframes showmenu1 {
+    from {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    to {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        content:url("exit.svg");
+    }
+  }
+
+
+.banner{
+    width: 100%;
+    display: block;
+
+}
+
+.bannerimg{
+    background: url('banners/Banner1.jpg') no-repeat center;
+    height: 380px;
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+
+.mobilenav {
+    width: 250px;
+    background-color: #A6192E;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+}
+
+.showmenu2 {
+    animation: showmenu2 0.5s ease-out both;
+    display: block;
+}
+
+@keyframes showmenu2 {
+    from{
+        -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    }
+    to{
+        -webkit-transform: translateX(0);
+            transform: translateX(0);
+    }
+}
+
+.hidemenu1{
+    animation: hidemenu1 0.6s ease-in both;
+}
+
+@keyframes hidemenu1 {
+    from {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        content:url("exit.svg");
+    }
+    to {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        content:url("menu.svg");
+    }
+  }
+
+.hidemenu2{
+    animation: hidemenu2 0.5s ease-out both;
+}
+
+@keyframes hidemenu2 { 
+    from{
+        -webkit-transform: translateX(0);
+            transform: translateX(0);
+            display: block;
+    }
+    99%{
+        display: block; 
+    }
+    to{
+        -webkit-transform: translateX(-250px);
+            transform: translateX(-250px);
+    }
+}
+
+.mobilenav ul{
+    margin-left: 0px;
+    position: relative;
+    top: 40px;
+    padding: 0px;
+}
+.mobilenav ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.mobilenav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+#m_subnav {
+    margin-left: 20px;
+    margin-top: -5px;
+    color: white;
+}
+
+.m_current{
+    font-weight: bold;
+    border-left-color: white;
+    border-left: 8px;
+    border-left-style: solid;
+    padding-left: 32px!important;
+    
+}
+
+
+@media only screen and (max-width: 480px) {  /*Weergave op telefoons */
+    .banner{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {  /*Weergave op tablets */
+    .disclaimer p{
+        width: 90%;
+    }
+
+    .navbar a{
+        display: none;
+    }
+
+    .dropbtn{
+        display: none;
+    }
+
+    #menu{
+        display: inline;
+        position: fixed;
+    }
+
+    #naam {
+        left: 50px;
+    }
+
+}
