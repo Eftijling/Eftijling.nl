@@ -6,6 +6,15 @@
     
 }
 
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 #logo{
     height: 100px;
     width: 300px;
@@ -64,6 +73,61 @@ header{
 .controlls{
     display: inline-block;
 }
+
+#playpause{
+    min-width: 100px;
+    width: calc((100vw - 778px)/2);
+    position: absolute;
+    left: 178px;
+    top: 0px;
+}
+
+#play {
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+}
+
+#pause {
+    position: relative;
+    top: 0px;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#skip{
+    width: calc((100vw - 1000px)/2);
+    position: relative;
+    left: calc(((100vw - 778px)/2) + 400px);
+    min-width: 100px;
+}
+
+#nextvideo{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@media only screen and (max-width:1153px){
+    #playpause{
+        width: 100px;
+        left: 160px;
+        margin: 0;
+        
+    }
+    #skip{
+        width: 100px;
+        left: 230px;
+        margin-left: 0px;
+        position: fixed;
+        top: calc(100% - 100px)
+    }
+}
+
 .miniplayer{
     background-color:#eeeeee;
     position: fixed;
@@ -72,25 +136,20 @@ header{
     bottom: 0px;
 }
 
-#pause {
-    position: absolute;
-    top: 0px;
-    display: none;
-}
-
 #bar{
-    width:200px;
+    width:300px;
     height:20px;
     background-color: white;
-    position: absolute;
-    left: 278px;
-    top: 0;
-    margin: 40px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
     border-radius: 10px;
+    z-index: 12;
 }
    
 #progress {
-    width:200px;
+    width:100%;
     height:20px;
     position: relative;
     left: 0;
@@ -101,12 +160,97 @@ header{
     clip-path: inset(0 0 0 100% );
 }
     
-    
-#play {
+@media only screen and (max-width: 934px){
+    #bar{
+        width: 100vw;
+        position: fixed;
+        top: calc(100vh - 10px);
+        border-radius: 0px;
+    }
+    #progress{
+        width: 100vw;
+        border-radius: 0px;
+    }
+    #currentvideo{
+        display: none;
+    }
+}
+
+#playlist{
+    height: 100px;
+    width: 300px;
+    right: 0px;
     position: absolute;
     top: 0px;
 }
 
+.p{
+    height: 20px;
+    width: 300px;
+    display: inline;
+}
+
+.pli{
+    text-align: center;
+    white-space: nowrap;
+}
+
+.plr{
+    display: none;
+    float: left;
+    left: 0px;
+    position: relative;
+}
+
+#wachtrijcount{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 607px){
+    .p{
+        display: none;
+    }
+    #playlist{
+        width: 160px;
+    }
+    #wachtrijcount{
+        text-align: center;
+        margin-top: 40px;
+
+    }
+}
+
+@media only screen and (max-width: 469px){
+    #playlist{
+        width: 60px
+    }
+    #wachtrijcount{
+        transform: rotate(90deg);
+        width: 80px;
+        font-size: 13px;
+
+    }
+}
+
+@media only screen and (max-width: 342px){
+    #wachtrijcount{
+        display: none;
+    }
+}
+
+
+#currentvideo{
+    position: fixed;
+    bottom: 65px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 20px;
+    width: 100vw;
+    left: 0px;
+}
 
 #table{
     position: absolute;

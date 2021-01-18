@@ -77,20 +77,54 @@
         <div class="miniplayer" id="miniplayer">
             <div id="placeholder"></div>
             <div id="player"></div>
-            <div class="controlls">
-             <div id="playpause">   
-              <img id="pause"src="https://lh3.google.com/u/1/d/1NoBw1UyiiKxmJ6H7GNiJ-DdVUz43aJtB=w3840-h2052-iv1" alt="pause" onclick="pause()" height="100" width="100"> 
-              <img id="play"src="https://lh3.google.com/u/1/d/1S4QmmcrPy2GVrR777tK5-PZnglXLZqNX=w3840-h2052-iv1" alt="pause" onclick="play()" height="100" width="100">
-             </div>
-             <div>
-                <div id="bar" onclick="progressbar()">
-               <div id="progress"></div>
-            </div>    
-             </div>
+                <div class="controlls">
+                     <div id="playpause">   
+                        <img id="pause"src="https://lh3.google.com/u/1/d/1NoBw1UyiiKxmJ6H7GNiJ-DdVUz43aJtB=w3840-h2052-iv1" alt="pause" onclick="pause()" height="100px" width="100px"> 
+                        <img id="play"src="https://lh3.google.com/u/1/d/1S4QmmcrPy2GVrR777tK5-PZnglXLZqNX=w3840-h2052-iv1" alt="pause" onclick="play()" height="100px" width="100px">
+                    </div>
+                    <div id="skip">
+                        <svg id="nextvideo" onclick="nextvideo()" width="100px" height="100px" viewBox="0 0 1080 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                            <g transform="matrix(1,0,0,1,-90.5,0)">
+                                <path d="M501.5,406.298L501.5,312.5L940.5,540L501.5,767.5L501.5,673.702L320.5,767.5L320.5,312.5L501.5,406.298Z" style="fill:rgb(166,25,46);"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div>
+                        <div id="bar" onclick="progressbar()">
+                            <div id="progress"></div>  
+                        </div>
+                        <p id="currentvideo"></p>    
+                    </div>
+                    
+                    <div id="playlist">
+                        <p id="wachtrijcount">0 video's in de wachtrij</p>
+                        <div id="p1" class="p">
+                            <svg width="20px" height="20px" id="plr0" onclick="playlistremove0()" class="plr" viewBox="0 0 1080 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                <g transform="matrix(0.707714,0.706499,-0.706499,0.707714,652.591,-95.7859)">
+                                    <path d="M400,509.5L596,509.5L596,570.5L400,570.5L400,755.967L339,756L339,570.5L143.033,570.5L143,509.5L339,509.5L339,303L400,303L400,509.5Z" style="fill:rgb(166,25,46);"/>
+                                </g>
+                            </svg>
+                            <div class="pli" id="pl0"></div>
+                        </div>
+                        <div id="p2" class="p">
+                            <svg width="20px" height="20px" id="plr1" onclick="playlistremove1()" class="plr" viewBox="0 0 1080 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                <g transform="matrix(0.707714,0.706499,-0.706499,0.707714,652.591,-95.7859)">
+                                    <path d="M400,509.5L596,509.5L596,570.5L400,570.5L400,755.967L339,756L339,570.5L143.033,570.5L143,509.5L339,509.5L339,303L400,303L400,509.5Z" style="fill:rgb(166,25,46);"/>
+                                </g>
+                                </svg>
+                            <div class="pli" id="pl1"></div>  
+                        </div>
+                        <div id="p3" class="p">
+                            <svg width="20px" height="20px" id="plr2" onclick="playlistremove2()" class="plr" viewBox="0 0 1080 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                <g transform="matrix(0.707714,0.706499,-0.706499,0.707714,652.591,-95.7859)">
+                                    <path d="M400,509.5L596,509.5L596,570.5L400,570.5L400,755.967L339,756L339,570.5L143.033,570.5L143,509.5L339,509.5L339,303L400,303L400,509.5Z" style="fill:rgb(166,25,46);"/>
+                                </g>
+                            </svg>
+                            <div class="pli" id="pl2"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            </div>
-            </div>
-            
     </footer>
 </body>
 </html>
