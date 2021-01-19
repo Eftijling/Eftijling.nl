@@ -42,6 +42,7 @@ header{
     position: fixed;
     height: 100px;
     width: 178px;
+    bottom: 0px;
     background-color: black;
     z-index: 10;
 }
