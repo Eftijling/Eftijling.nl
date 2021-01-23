@@ -50,9 +50,10 @@ function onYouTubeIframeAPIReady() {
     }); 
 }
 
+
 window.addEventListener("message", function(vidid){
     if (playerready == 1){
-        if (vidid.origin === 'https://view-awesome-table.com'){
+        if (vidid.origin === 'https://view-awesome-table.com' && String(vidid.data).includes("novideo") == false){
             var nplay = String(vidid.data).includes("play");
             var ncue = String(vidid.data).includes("cue");
             if (nplay == true){
