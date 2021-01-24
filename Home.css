@@ -23,7 +23,7 @@ body{
     max-width: 100%;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     display: none;
 }
 
@@ -197,21 +197,28 @@ header{
 }
 
 #krullen {
-    position: fixed;
-    opacity: 10%;
+    position: fixed; 
     top: 0px;
     width: 100%;
     height: 100%;
     
 }
 
-#krullen img{
+.krullen{
     min-width: 101%;
     min-height: 101%;
+    opacity: 7%;
 }
 
-@media only screen and (max-width: 1574px){
-    #krullen img{
+
+@media only screen and (max-width: 1574px) and (min-width: 967px){
+    .krullen{
+        width: 101%;
+    }
+}
+
+@media only screen and (max-width: 967px){
+    .krullen{
         height: 101%;
     }
 }
@@ -347,22 +354,35 @@ section{
     transform: translateX(-50%);
 }
 
-#muzieklijsten{
+#uitgelicht{
     display: none;
-}
-#muzieklijsten article{
     height: 100vh;
+    min-height: 100%;
+    width: 100vw;
+    top: 100px;
+    position: relative;
     background-color: #A6192E;
 }
 
-#muzieklijsten article h1{
-    font-size: 50px;
-    width: fit-content;
-    padding-top: 70px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+#uitgelicht article{
+    position: relative;
+}
+
+#s2krullen{
+    position: absolute;
+    
+}
+
+#s2heading{
+    position: relative;
+    top: 100px;
+    font-size: 80px;
+    text-align: center;
     color: white;
 }
+
+
+
 .fancyborder{
     z-index: 10;
 }
@@ -486,12 +506,12 @@ section{
 
 #projecten{
     width: 70%;
-    height: 400px;
+    height: 350px;
     background-color: white;
     border-radius: 15px;
     position: absolute;
     margin-left: 50%;
-    bottom: 150px;
+    bottom: 60px;
     transform: translateX(-50%);
     box-shadow: 0 0 20px 0 rgba(0,0,0,.3);
     z-index: 11;
@@ -499,7 +519,7 @@ section{
 
 #projectbox{
     width: calc(100% - 20px);
-    height: 380px;
+    height: 330px;
     background-color: white;
     border-radius: 10px;
     border-color:#A6192E;
@@ -569,6 +589,26 @@ section{
         display: block;
     }
 }
+
+@media only screen and (max-height: 734px){
+    #projects{
+        display: none;
+    }
+    #projecten{
+        bottom: 70px;
+        height: 150px;
+    }
+    #projectbox{
+        height: 130px;
+    }
+    #projectbox h2 {
+        display: none;
+    }
+    #projectbox h3{
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 364.5px){
     @media only screen and (max-height: 840px){
         #projecten{
@@ -586,7 +626,7 @@ section{
         }
     }   
 }
-@media only screen and (max-width: 455.5px)and (min-width:365px){
+@media only screen and (max-width: 455.5px) and (min-width:365px){
     @media only screen and (max-height: 787px){
         #projecten{
             bottom: -25px;
@@ -598,6 +638,18 @@ section{
         }
     }
 }
+
+@media only screen and (max-height: 816px) and (min-height: 734px){
+    #projecten{
+        height: 270px;
+    }
+    #projectbox{
+        height: 250px;
+    }
+}
+
+
+
 
 #projectinfo{
     height: 100%;
