@@ -11,6 +11,7 @@ function scrollload(){
 
 function afterscroll(){
     document.getElementById('krullen').style.display = "none";
+    document.getElementById('uitgelicht').style.display = "block"
 }
 
 
