@@ -329,19 +329,19 @@ section{
     width: 100vw;
     position: sticky;
     scroll-snap-align: center;
-    height: 100vh;
     max-width: 100%;
 }
 
 #welkom{
     top: 50px;
     height: calc(100vh - 50px)!important;
+    margin-bottom: 50px;
 
 }
 
 #welkom article{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     max-width: 100%;
     
 }
@@ -355,17 +355,16 @@ section{
 }
 
 #uitgelicht{
+    top: 50px;
     display: none;
-    height: 100vh;
-    min-height: 100%;
-    width: 100vw;
-    top: 100px;
-    position: relative;
+    height: calc(100vh - 50px)!important;
     background-color: #A6192E;
 }
 
 #uitgelicht article{
-    position: relative;
+    height: 100%;
+    width: 100%;
+    
 }
 
 #s2krullen{
@@ -376,11 +375,56 @@ section{
 #s2heading{
     position: relative;
     top: 100px;
-    font-size: 80px;
+    font-size: calc(1em + 4vw);
     text-align: center;
     color: white;
 }
 
+#s2blog{
+    color: white;
+    position: relative;
+    left: 10%;
+    top: 100px;
+    height: max-content;
+    
+}
+
+#muziekharp{
+    height: 15%;
+    width: 15%;
+    position: relative;
+
+}
+
+#s2text{
+    font-size: calc(1em + 1vw);
+    display: inline;
+    position: absolute;
+    max-width: 65%;
+    top: 15%;
+}
+
+#s2disclaimer{
+    right: 5%;
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    #s2heading{
+        top: 45px;
+    }
+
+    #s2blog{
+        top: 35px;
+    }
+
+    #s2disclaimer{
+        text-align: center;
+    }
+}
 
 
 .fancyborder{
