@@ -685,10 +685,10 @@ section{
 
 @media only screen and (max-height: 816px) and (min-height: 734px){
     #projecten{
-        height: 270px;
+        height: 150px;
     }
     #projectbox{
-        height: 250px;
+        height: 130px;
     }
 }
 
