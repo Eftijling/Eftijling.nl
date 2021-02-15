@@ -9,4 +9,4 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 
 #redirects
 
-Redirect 301 /index /
+Redirect 301 /index https://eftijling.nl/
