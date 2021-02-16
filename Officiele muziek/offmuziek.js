@@ -208,3 +208,17 @@ function nextvideo(){
     }
     
 }
+
+
+// filtered url
+setTimeout(function tablereload(){
+    var tablesource = 'https://view-awesome-table.com/-M8y99p7ClFXlAMTESr_/view/?hideFilters=false';
+
+    let parameters = new URLSearchParams(window.location.search);
+    var search = parameters.get('zoek');     
+    if(search != null){
+        var filtersource = tablesource+'?filterF='+search;
+        document.getElementById('table').children[0].src = filtersource;
+    }
+},150);
+
