@@ -1,4 +1,5 @@
 var togglemenu = 0;
+var togglehelp = 0;
 var player;
 var title;
 var ytid;
@@ -6,6 +7,9 @@ var playerready = 0;
 var tag = document.createElement('script');
 const cuedids = [];
 const cuetitle =[];
+
+
+
 
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -212,7 +216,7 @@ function nextvideo(){
 
 // filtered url
 setTimeout(function tablereload(){
-    var tablesource = 'https://view-awesome-table.com/-M8y99p7ClFXlAMTESr_/view/?hideFilters=false';
+    var tablesource = 'https://view-awesome-table.com/-MW4HdKKiYb1SpzNocad/view/?hideFilters=false';
 
     let parameters = new URLSearchParams(window.location.search);
     var search = parameters.get('zoek');     
@@ -222,3 +226,13 @@ setTimeout(function tablereload(){
     }
 },150);
 
+function helpmenu(){
+    if(togglehelp == 1){
+        document.getElementById('helpmenu').style.display = 'none';
+        togglehelp = 0;
+    }
+    else{
+        document.getElementById('helpmenu').style.display = 'grid';
+        togglehelp = 1;
+    }
+}

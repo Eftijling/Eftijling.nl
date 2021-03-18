@@ -257,6 +257,115 @@ header{
     width:100%
 }
 
+
+
+
+#help{
+    z-index: 3;
+    position: fixed;
+    top: 70px;
+    margin: 0px;
+    right: -30px;
+}
+
+#help:hover {
+    transform: scale(1.05);
+
+}
+
+@media only screen and (max-width: 919px){
+    #help{
+        display: none;
+    }
+    #helpmenu{
+        display: none!important;
+    }
+}
+
+#helpmenu{
+    display: none;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 115px 145px auto  100px;
+    grid-template-areas: 
+        "filter filter"
+        "liedjes speel"
+        "liedjes info"
+        "player player";
+    height: calc(100vh - 50px);
+    top: 50px;
+    position: fixed;
+    width: 100vw;
+    align-content: stretch;
+    justify-content: stretch;
+    z-index: 2;
+}
+
+.helpgrid{
+    background-color: white;
+    opacity: 0.75;
+    -webkit-opacity: 0.75;
+    z-index: 4;
+}
+
+.helpgrid:hover{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #A6192E;
+    opacity: 1;
+    -webkit-opacity: 1;
+    background-color: transparent;
+}
+
+
+
+.glabel{
+    display: none;
+    background-color: #A6192E;
+    color: white;
+    height: 30px;
+    width: fit-content;
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+.helpgrid:hover .glabel {
+    display: block;
+}
+
+.ginfo{
+    display: none;
+}
+
+.helpgrid:hover .ginfo {
+    display: block;
+}
+
+
+
+#gfilters{
+    grid-area: filter;
+}
+
+#gliedjes{
+    grid-area: liedjes;
+}
+
+#gspeel{
+    grid-area: speel;
+}
+
+#ginfo{
+    grid-area: info;
+}
+
+#gplayer{
+    grid-area: player;
+}
+
+
+
+
 /* Navigatie */
 
 #navbar {
